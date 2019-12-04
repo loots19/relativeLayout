@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/vinylImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-3dp"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/images" />
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postly"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:fontFamily="serif"
+        android:layout_marginTop="80dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/text_2"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Seamless Social Sharing, it's that easy!"
+        android:layout_below="@id/text_1"
+        android:layout_centerInParent="true"/>
+    <EditText
+        android:id="@+id/mailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="you@yours.com"
+        android:textColorHint="@android:color/white"
+        android:layout_below="@id/text_2"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+         android:padding="10dp"
+        android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:id="@+id/mailImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mailText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@id/mailText"
+        app:srcCompat="@drawable/ic_mail_outline_black_24dp" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/white"
+        android:hint="Password"
+        android:layout_below="@id/mailText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/passwordText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@id/passwordText"
+        app:srcCompat="@drawable/ic_lock_open_black_24dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordText"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:text="LOGIN"
+        app:backgroundTint="@android:color/transparent"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:text=" ------------------------------  or you can  -----------------------------"
+        android:textColor="@android:color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:text="CREATE AN ACCOUNT"
+        app:backgroundTint="@android:color/transparent"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
