@@ -13,7 +13,6 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="-3dp"
         android:alpha="0.2"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/images" />
@@ -53,7 +52,7 @@
         android:textStyle="bold"
         android:textSize="18sp"
          android:padding="10dp"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="20dp"/>
 
     <ImageView
         android:id="@+id/mailImage"
@@ -97,7 +96,7 @@
         android:layout_below="@id/passwordText"
         android:layout_centerInParent="true"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:text="LOGIN"
         app:backgroundTint="@android:color/transparent"
         app:strokeColor="@android:color/white"
@@ -105,13 +104,13 @@
 
     <TextView
         android:id="@+id/tv"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/logButton"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="40dp"
-        android:text=" ------------------------------  or you can  -----------------------------"
+        android:layout_marginTop="20dp"
+        android:text=" -----------------  or you can  ----------------"
         android:textColor="@android:color/white"/>
 
     <com.google.android.material.button.MaterialButton
@@ -120,7 +119,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_centerInParent="true"
         android:text="CREATE AN ACCOUNT"
         app:backgroundTint="@android:color/transparent"
